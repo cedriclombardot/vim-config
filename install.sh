@@ -3,8 +3,8 @@
 CURRENT=`pwd`
 
 # Git
-git submodule update --init
-git submodule foreach git pull origin master
+# git submodule update --init
+# git submodule foreach git pull origin master
 
 # Remove old installations
 if [ -d ~/.vim ] ; then
@@ -25,7 +25,7 @@ cp -R $CURRENT/syntastic/plugin/* ~/.vim/plugin
 cp -R $CURRENT/syntastic/syntax_checkers ~/.vim/syntax_checkers
 
 # Command-T
-cd ~/.vim/ruby/command-t
+cd ~/.vim/.vim/ruby/command-t
 ruby extconf.rb
 make clean && make
 cd $CURRENT

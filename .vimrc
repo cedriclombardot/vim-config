@@ -117,9 +117,9 @@ filetype plugin on
 filetype indent on
 
 " Color scheme
-" let &t_Co=256         " force the 256-color mode
+let &t_Co=256         " force the 256-color mode
 " set background=light
-" colorscheme mustang
+colorscheme desert
 
 " Ctags
 set nocp
@@ -217,7 +217,7 @@ let g:syntastic_enable_signs = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_quiet_warnings=0
 set statusline+=%#warningmsg#
-" set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
 " Tab mappings.
