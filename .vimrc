@@ -6,6 +6,7 @@
 set title
 
 " Global
+set mouse=a                         " Enable mouse usage in all mode
 set hidden ruler wmnu               " Hide buffer instead of abandoning when unloading
 
 set wildmenu                        " Enhanced command line completion.
@@ -80,8 +81,8 @@ set gdefault
 
 " Useful status information at bottom of screen
 " set statusline=[%n]\ %<%.99f\ %h%w%m%r%y\(%{getcwd()})%{fugitive#statusline()}%=%-16(\ %l,%c-%v\ %)%P
-set statusline=[%n]\ %<%.99f\ %h%w%m%r%y\%{fugitive#statusline()}
-set statusline+=%{\"[\".(&fenc==\"\"?&enc:&fenc).((exists(\"+bomb\")\ &&\ &bomb)?\",B\":\"\").\"]\ \"}%=%-16(\ %l,%c-%v\ %)%P
+" set statusline=[%n]\ %<%.99f\ %h%w%m%r%y\%{fugitive#statusline()}
+" set statusline+=%{\"[\".(&fenc==\"\"?&enc:&fenc).((exists(\"+bomb\")\ &&\ &bomb)?\",B\":\"\").\"]\ \"}%=%-16(\ %l,%c-%v\ %)%P
 
 " Tabs and indentation. Yes, I like 4-space tabs (Symfony2 here we go !)
 set tabstop=4
@@ -116,9 +117,9 @@ filetype plugin on
 filetype indent on
 
 " Color scheme
-let &t_Co=256         " force the 256-color mode
-set background=light
-colorscheme mustang
+" let &t_Co=256         " force the 256-color mode
+" set background=light
+" colorscheme mustang
 
 " Ctags
 set nocp
@@ -153,12 +154,12 @@ set nofoldenable
 
 " My information
 iab xdate <C-R>=strftime("%d/%m/%Y %H:%M:%S")
-iab xname <C-R> William Durand
-iab xsigp <C-R> William Durand <william.durand1@gmail.com>
-iab xsigw <C-R> William Durand <william.durand1@gmail.com>
+iab xname <C-R> Cedric LOMBARDOT
+iab xsigp <C-R> Cedric LOMBARDOT <cedric.lombardot@gmail.com>
+iab xsigw <C-R> Cedric LOMBARDOT <cedric.lombardot@gmail.com>
 
 " snipMate
-let g:snips_author = 'William Durand <william.durand1@gmail.com>'
+let g:snips_author = 'Cedric LOMBARDOT <cedric.lombardot@gmail.com>'
 
 " Markdown
 au! BufRead,BufNewFile *.markdown,*.md set filetype=mkd
@@ -216,7 +217,7 @@ let g:syntastic_enable_signs = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_quiet_warnings=0
 set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
+" set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
 " Tab mappings.
