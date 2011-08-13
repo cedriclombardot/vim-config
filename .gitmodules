@@ -1,3 +1,6 @@
 [submodule "syntastic"]
 	path = syntastic
 	url = git://github.com/scrooloose/syntastic.git
+[submodule "nerdtree"]
+	path = nerdtree
+	url = git://github.com/vim-scripts/The-NERD-tree.git

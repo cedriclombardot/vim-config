@@ -24,6 +24,11 @@ cp -R $CURRENT/syntastic/doc/* ~/.vim/doc
 cp -R $CURRENT/syntastic/plugin/* ~/.vim/plugin
 cp -R $CURRENT/syntastic/syntax_checkers ~/.vim/syntax_checkers
 
+#NerdTree
+cp -R $CURRENT/nerdtree/doc/* ~/.vim/doc
+cp -R $CURRENT/nerdtree/plugin/* ~/.vim/plugin
+cp -R $CURRENT/nerdtree/nerdtree_plugin ~/.vim/nerdtree_plugin
+
 # Command-T
 cd ~/.vim/.vim/ruby/command-t
 ruby extconf.rb

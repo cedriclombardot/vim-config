@@ -232,3 +232,7 @@ map <leader>tr :tabrewind<cr>
 
 " Vmail
 let g:vmail_flagged_color = "ctermfg=yellow ctermbg=black cterm=bold"
+
+" NERDTree
+autocmd VimEnter * NERDTree
+autocmd BufEnter * NERDTreeMirror
